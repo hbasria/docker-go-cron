@@ -5,7 +5,7 @@
 Docker:
 
 ```sh
-docker run -it --rm -p 8080:8080 -e SCHEDULE="@every 1m" hbasria/docker-go-cron-python:3.10-alpine
+docker run -it --rm -p 8080:8080 -v app.py:/app.py -e APP=/app.py -e SCHEDULE="@every 1m" hbasria/docker-go-cron-python:3.10-alpine
 ```
 
 Docker Compose:
